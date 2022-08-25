@@ -239,7 +239,7 @@
    In this section you should keep using the test from the previous section:
    ~/user/home/path/to/exercise/src/test/scala/Examples/firstTest.scala~
    
-   The second class in ~FirstTest~ is the ~TestRunner~ class which extends the peekPokeTester and 
+   The other class in ~FirstTest~ is the ~TestRunner~ class which extends the peekPokeTester and 
    takes a chisel module as its argument. 
    extending peekPokeTester allows the tester to observe and alter the
    state of the component ~MyModule~ using ~peek~, ~poke~, ~assert~ and ~step~
