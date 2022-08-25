@@ -176,7 +176,7 @@
    
    You can now type commands in the sbt shell:
    #+begin_src
-   sbt:chisel intro> testOnly Examples.firstChisel
+   sbt:chisel intro> testOnly Examples.FirstTest
    
    --- Lots of waiting ---
    #+end_src
