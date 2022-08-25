@@ -2,7 +2,7 @@
 
 This is the exercise 0 chisel intro for the TDT4255 course at NTNU. You may also be here if you are taking TDT4295.
 
-The main content of this repository was originally created by [[https://github.com/PeterAaser][Peter Aaser]].
+The main content of this repository was originally created by [[https://github.com/PeterAaser][Peter Aaser]]. It is now maintained by [[https://github.com/josephRog][Joseph Rogers]]
 
 There are several separate modules for you to read through before you will be ready
 to start writing code.
