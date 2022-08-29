@@ -13,5 +13,7 @@ In order to get started you should go through the introductory material:
 - [[./hdl.org][Introduction to hardware description languages]]
 - [[./introduction.org][Introduction to hardware chisel]]
 
+
+
 The deliverable for this exercise is constructing a matrix multiplying unit:
 - [[./exercise.org][Matrix multiplier exercise]]
