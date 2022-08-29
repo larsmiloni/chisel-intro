@@ -19,24 +19,18 @@
 
    + *Some flavor of GNU/Linux, or at least something UNIX-like.*
 
-     If you use anything other than Ubuntu 16.04 or 18.04 I won't be able to offer
-     help if something goes wrong.
+     Everything in this repository has been tested to run fine on Ubuntu, though any of the major
+     Linux distros are likely to function as well.
      If you use Windows, the Windows Linux Subsystem is also fully capable of running
-     chisel, and does not have any known compatibility issues with this framework.
-     Running chisel on OSX is probably possible, but you'll have to figure it out yourself.
+     Chisel, and does not have any known compatibility issues with this framework.
+     Running chisel on OSX is probably also possible, but it is not specifically supported. If you run
+     into any major issues then it is recommended to create an Ubuntu virtual machine using VirtualBox or
+     some other software.
 
    + *An editor suited for scala.*
 
-     My personal recommendation is GNU Emacs with emacs-lsp for IDE features along
-     with the metals language server (which works for any editor with lsp (language 
-     server protocol), such as vim, vscode and atom).
-     If you prefer an IDE I hear good things about intelliJ, however I haven't tested
-     it personally, so if odd stuff happens I can't help you.
-     *DON'T NEGLECT THIS!*
-     This course is hard enough as it is, no point making it harder by neglecting basic IDE
-     functionality. There are plenty of good options, no matter if you're a vim user or prefer
-     GUI based full fledged IDEs.
-     Please please please don't use 15 instances of gedit.
+     Any text editor that you are comfortable with should work fine for this course. It is recommended however
+     to use one that has good Scala functionality in order to make development smoother.
 
    + *Optional: sbt*
 
