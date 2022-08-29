@@ -30,7 +30,7 @@
    + *An editor suited for scala.*
 
      Any text editor that you are comfortable with should work fine for this course. It is recommended however
-     to use one that has good Scala functionality in order to make development smoother.
+     to use one that has good Scala functionality in order to make development smoother. Many people have had success using Visual Studio Code with the Scala Metals extension. IntelliJ has also been used by many.
 
    + *Optional: sbt*
 
