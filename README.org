@@ -1,4 +1,4 @@
-** TDT4255 Exercise 0: Introduction to Chisel and HDLs
+** TDT4255 Exercise 0: Introduction to Chisel and HDLs (20 Points)
 
 This is the exercise 0 chisel intro for the TDT4255 course at NTNU. You may also be here if you are taking TDT4295.
 
@@ -13,7 +13,23 @@ In order to get started you should go through the introductory material:
 - [[./hdl.org][Introduction to hardware description languages]]
 - [[./introduction.org][Introduction to hardware chisel]]
 
+*** Points Breakdown
+This exercise is worth a total of 20 points. These are all split between various tests in the introductory section to shown that the Chisel toolchain has been set up correctly, and that you have basic understanding of some of the language concepts. The points are given out as follows
 
+9 Tests, 2 points each:
+- FirstTest
+- MyIncrementTest
+- MyIncrementManyTest
+- MyVecSpec
+- MyVecAltSpec
+- InvalidSpec
+- DelaySpec
+- PrintfExampleSpec
+- EvilPrintfSpec
+2 additional points for getting everything correct.
 
-The deliverable for this exercise is constructing a matrix multiplying unit:
+To get checked off for all of your points, show that these tests are working during one of the lab sessions.
+
+*** Optional Content
+Once you are finished with the graded part of this exercise, there exists an optional challenge, creating a matrix multplier in hardware. Though it is not for points doing this will help you gain useful experience that can be applied to the main CPU project in this course.
 - [[./exercise.org][Matrix multiplier exercise]]
