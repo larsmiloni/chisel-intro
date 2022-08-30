@@ -502,7 +502,7 @@
     #+begin_src scala
     val chiselUInt: Chisel3.UInt = 123.U(12.W)
     val firstBit = chiselUInt(0) // a signal of width 1 with the value 1
-    val subWord = chiselUInt(4, 1) // a signal of width 4 with value 1101 (11)
+    val subWord = chiselUInt(4, 0) // a signal of width 4 with value 1101 (11)
     #+end_src
 
 *** Chisel and scala control flow
