@@ -82,8 +82,8 @@ class EvilPrintfSpec extends FlatSpec with Matchers {
 
   it should "tell a lie and hurt you" in {
     wrapTester(
-      chisel3.iotesters.Driver.execute(Array("--generate-vcd-output", "on", "--target-dir", "/home/peter/", "--backend-name", "treadle"), () => new CountTo3) { c =>
-      // chisel3.iotesters.Driver(() => new CountTo3) { c =>
+      // chisel3.iotesters.Driver.execute(Array("--generate-vcd-output", "on", "--target-dir", "/home/peter/", "--backend-name", "treadle"), () => new CountTo3) { c =>
+        chisel3.iotesters.Driver(() => new CountTo3) { c =>
         new CountTo3Test(c)
       } should be(true)
     )
