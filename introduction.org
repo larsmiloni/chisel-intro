@@ -278,7 +278,7 @@
    for(ii <- 0 until 10){
      poke(c.io.dataIn, ii.U)
      val o3 = peek(c.io.dataOut)
-     say(s"observed state at iteration $ii: $o")
+     say(s"observed state at iteration $ii: $o3")
    }
    #+end_src
    
