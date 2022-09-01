@@ -95,7 +95,7 @@ object VectorTests {
 
     for(ii <- 0 until c.elements){
       poke(c.io.idx, ii)
-      expect(c.io.dataOut, ii)
+      poke(c.io.dataIn, 0)
       step(1)
     }
 
