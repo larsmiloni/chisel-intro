@@ -528,7 +528,7 @@
     #+end_src
     
     This code describes the following circuit:
-   [[ ./Images/ChiselConditional.png]]
+   [[./Images/ChiselConditional.png]]
 
     If the RTL is unfamiliar, the two leftmost components that look somewhat like boxer shorts 
     are ALUs which do arithmetic (addition and subtraction in this case).
