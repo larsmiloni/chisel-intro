@@ -13,12 +13,12 @@
    Now, replace the line that says
    ~chisel3.iotesters.Driver(() => new SimpleDelay) { c =>~
    with
-   ~chisel3.iotesters.Driver.execute(Array("--generate-vcd-output", "on", "--backend-name", "treadle"), () => new SimpleDelay) { c =>~
+   ~chisel3.iotesters.Driver.execute(Array("--generate-vcd-output", "on", "--backend-name", "treadle", "--target-dir", "waveforms", "--top-name", "SimpleDelay"), () => new SimpleDelay) { c =>~
    and run the associated test from sbt with
    ~sbt: testOnly Examples.DelaySpec~
 
    You should now be able to find a .vcd file in your project root, located somewhere near
-   ~/user/home/path/to/exercise/test_run_dir/Example.DelaySpec$Number/SomethingSomething.vcd~
+   ~/user/home/path/to/exercise/waveforms/SimpleDelay.vcd~
    which you can open with gtkwave.
    
 
