@@ -16,7 +16,7 @@ In order to get started you should go through the introductory material:
 *** Points Breakdown
 This exercise is worth a total of 20 points. These are all split between various tests in the introductory section to shown that the Chisel toolchain has been set up correctly, and that you have basic understanding of some of the language concepts. The points are given out as follows
 
-9 Tests, 2 points each:
+9 Tests, 1 point each:
 - FirstTest
 - MyIncrementTest
 - MyIncrementManyTest
@@ -26,10 +26,16 @@ This exercise is worth a total of 20 points. These are all split between various
 - DelaySpec
 - PrintfExampleSpec
 - EvilPrintfSpec
-2 additional points for getting everything correct.
+1 additional point for getting everything correct.
+
+
+Once you are finished with the initial part of this exercise, you have to create a matrix multplier in hardware.
+
+- [[./exercise.org][Matrix multiplier exercise]]
+- 2 point for VectorSpec
+- 1 point for MatrixSpec
+- 2 points for DotProdSpec
+- 5 points for the complete Matrix multiplication
 
 To get checked off for all of your points, show that these tests are working during one of the lab sessions.
 
-*** Optional Content
-Once you are finished with the graded part of this exercise, there exists an optional challenge, creating a matrix multplier in hardware. Though it is not for points doing this will help you gain useful experience that can be applied to the main CPU project in this course.
-- [[./exercise.org][Matrix multiplier exercise]]
