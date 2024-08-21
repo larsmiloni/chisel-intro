@@ -121,17 +121,13 @@
 *** Chisel counters and a short detour on scala documentation
     Doing an action for a set amount of timesteps is a very common task in hardware design, so this
     functionality is included in chisel via the Counter class.
-    In order to understand how this counter works you can google "chisel counter" and get the following
-    https://chisel.eecs.berkeley.edu/api/3.0.1/chisel3/util/Counter.html as first result.
-    However, this is for the counter Class, what you actually want is the counter Object: 
-    https://chisel.eecs.berkeley.edu/api/3.0.1/chisel3/util/Counter$.html
-    (you can click on the methods to get an expanded description)
-    
+  
+    Keep in mind that a class and an object are not the same in Chisel.
     This can be very confusing when new to scala, but it is simply convention:
     When a class and an object share name this is just a convenience for keeping static methods, such
     as constructors, separated from the non-static methods.
 
-    In the Counter object (the second link) there is an apply method:
+    In the Counter object there is an apply method:
     #+begin_src scala
       def apply(cond: Bool, n: Int): (UInt, Bool)
     #+end_src
