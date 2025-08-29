@@ -16,7 +16,7 @@ class MatMulSpec extends FlatSpec with Matchers {
 
   it should "Multiply two matrices" in {
     wrapTester(
-      chisel3.iotesters.Driver(() => new MatMul(rowDims, colDims)) { c =>
+      chisel3.iotesters.Driver.execute(Array("--generate-vcd-output", "on", "--backend-name", "treadle", "--target-dir", "waveforms", "--top-name", "MatMul"), () => new MatMul(rowDims, colDims)) { c =>
         new FullMatMul(c)
       } should be(true)
     )

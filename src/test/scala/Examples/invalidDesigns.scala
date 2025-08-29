@@ -16,7 +16,7 @@ class Invalid() extends Module {
   val myVec = Module(new MyVector)
 
   // Uncomment line below to make the circuit valid
-  // myVec.io.idx := 0.U
+  myVec.io.idx := 0.U
 }
 
 class InvalidSpec extends FlatSpec with Matchers {

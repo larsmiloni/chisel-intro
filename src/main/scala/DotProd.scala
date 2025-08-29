@@ -15,17 +15,16 @@ class DotProd(val elements: Int) extends Module {
     }
   )
 
-
-  /**
-    * Your code here
-    */
-  val counter = Counter(elements)
-  val accumulator = RegInit(UInt(32.W), 0.U)
-
-  // Please don't manually implement product!
   val product = io.dataInA * io.dataInB
+  val accumulator = RegInit(0.U(32.W))
+  val (count, wrap) = Counter(true.B, elements)
+  val nextSum = accumulator + product
 
-  // placeholder
-  io.dataOut := 0.U
-  io.outputValid := false.B
+  accumulator := nextSum
+  io.dataOut := nextSum
+  io.outputValid := wrap
+
+  when(wrap) {
+    accumulator := 0.U
+  }
 }
